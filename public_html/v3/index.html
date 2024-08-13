@@ -87,8 +87,9 @@
 		<script src="Detector.js"></script>
 		<script src="toon3d.js"></script>
 		<script src="threex.keyboardstate.js"></script>
-		<script src="game.js"></script>
-		<script>
+		<script src="game.js" type="module"></script>
+		<script type="module">
+			import Game from "./game.js";
 			var game;
 			document.addEventListener("DOMContentLoaded", function(){ game = new Game(); });
 		</script>
